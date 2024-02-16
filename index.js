@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Watching Netflix","Listening to Spotify","Playing GTA VI"];
+const statusMessages = ["Playing Resident Evil 2"];
 
 
 let currentIndex = 0;
@@ -69,7 +69,7 @@ GIT : https://github.com/RTX-GAMINGG/Bot-ghost-status-remover-by-RTX
 
 
 function updateStatusAndSendMessages() {
-  const currentStatus = statusMessages[currentIndex];
+  const currentStatus = statusMessages["Playing Resident Evil 2"];
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
